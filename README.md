@@ -1,1 +1,39 @@
-# number_classification_api
+# Number Classification API 
+
+## Overview  
+This API classifies numbers based on mathematical properties and provides a fun fact.  
+
+## Features  
+- Checks if a number is **prime** or **perfect**.  
+- Identifies if a number is **odd/even** or an **Armstrong number**.  
+- Calculates the **sum of digits**.  
+- Fetches a **fun fact** from Numbers API.  
+
+## How to Use  
+
+### API Endpoint 
+`GET /api/classify-number?number=371`  
+
+###Example Response (200 OK)**
+```json
+{
+  "number": 371,
+  "is_prime": false,
+  "is_perfect": false,
+  "properties": ["armstrong", "odd"],
+  "digit_sum": 11,
+  "fun_fact": "371 is an Armstrong number because 3^3 + 7^3 + 1^3 = 371"
+}
+Error Response (400 Bad Request)
+{
+  "number": "abc",
+  "error": true
+}
+Running Locally
+    git clone https://github.com/Farouq-okeniyi/number_classification_api.git
+    cd src
+    npm install
+    npm run dev
+Live Demo
+    Deployed API: https://your-deployed-url.com/api/classify-number?number=371
+
