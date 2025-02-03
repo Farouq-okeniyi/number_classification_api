@@ -1,21 +1,21 @@
 # Number Classification API 
 
-## Overview  
+Overview  
 This API classifies numbers based on mathematical properties and provides a fun fact.  
 
-## Features  
-- Checks if a number is **prime** or **perfect**.  
-- Identifies if a number is **odd/even** or an **Armstrong number**.  
-- Calculates the **sum of digits**.  
-- Fetches a **fun fact** from Numbers API.  
+Features  
+- Checks if a number is prime or perfect.  
+- Identifies if a number is odd/even** or an Armstrong number.  
+- Calculates the sum of digits.  
+- Fetches a fun fact from Numbers API.  
 
-## How to Use  
+How to Use  
 
-### API Endpoint 
+API Endpoint 
 `GET /api/classify-number?number=371`  
 
-###Example Response (200 OK)**
-```json
+Example Response (200 OK)
+
 {
   "number": 371,
   "is_prime": false,
