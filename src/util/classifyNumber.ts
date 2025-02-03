@@ -35,7 +35,10 @@ const isArmstrong = (num: number): boolean => {
 };
 
 const getDigitSum = (num: number): number => {
-    return num.toString().split("").reduce((acc, d) => acc + Number(d), 0);
+    return Math.abs(num)
+    .toString()
+    .split("")
+    .reduce((acc, d) => acc + Number(d), 0);
 
 };
 
